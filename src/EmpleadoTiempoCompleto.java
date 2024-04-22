@@ -5,7 +5,9 @@ public class EmpleadoTiempoCompleto extends Empleado {
         super(codigo, nombreCompleto, cedula, direccion, fechaInicio);
         this.estaActivo = estaActivo;
     }
-
+    public void setActivo(boolean activo) {
+        this.estaActivo = activo;
+    }
     @Override
     public void mostrarDatos() {
         super.mostrarDatos();
